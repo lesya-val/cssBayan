@@ -1,11 +1,11 @@
 *{padding: 0; margin: 0; border: 0;}
-*, *:before, *:after{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+*{-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
 :focus, :active{outline: none;}
 a:focus, a:active{outline: none;}
 nav, footer, header, aside, section {display: block;}
 html, body{min-height: 100%; overflow: hidden}
-body{line-height: 1; font-size: 28px; font-family: Arial; color: #000000;  font-weight: 600; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
-input, button, textarea{font-family: Arial;}
+body{line-height: 1; font-size: 36px; font-family: Montserrat; color: #000000;  font-weight: 700; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+input, button, textarea{font-family: Montserrat;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
 button::-moz-focus-inner{padding: 0; border: 0;}

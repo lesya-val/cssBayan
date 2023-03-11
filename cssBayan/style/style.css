@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
 .container {
     max-width: 800px;
     padding: 40px 20px;
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.bayan__item {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+.item__title {
+    padding: 20px 0px;
+    display: block;
+    cursor: pointer;
+}
+
+.item__input {
+    appearance: none;
+    position: absolute;
+}
+
+.item__image {
+    display: none;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.item__input:checked ~ .item__image {
+    display: block;
 }
