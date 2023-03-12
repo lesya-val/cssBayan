@@ -7,7 +7,7 @@
 }
 
 h1 {
-    font-size: 52px;
+    font-size: 40px;
     font-weight: 800;
     margin-bottom: 20px;
 }
@@ -18,12 +18,10 @@ h1 {
 
 .bayan__item {
     border-top: 1px solid #000000;
-    border-bottom: 1px solid #000000;
 }
 
 .item__input {
     appearance: none;
-    position: absolute;
 }
 
 /***Title***/
@@ -31,12 +29,12 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding-bottom: 30px;
     cursor: pointer;
 }
 
 .item__text {
-    color: blue;
+    color: #0092e4;
 }
 
 .bayan:hover .item__text {
@@ -45,7 +43,15 @@ h1 {
 
 .item__input:checked ~ .item__title > .item__text {
     color: #000000;
-                                      }
+}
+
+.bayan__item:active .item__text{
+    color: #0092e4;
+}
+
+.item__text:active {
+    color: #0092e4;
+}
 
 .item__icon {
     display: none;
@@ -58,11 +64,19 @@ h1 {
     background: url("../image/plus.svg") no-repeat;
 }
 
+.bayan__item:hover .item__icon {
+    transform: rotate(45deg);
+}
+
 .item__input:checked ~ .item__title > .item__icon {
+    transform: rotate(45deg);
+}
+
+.bayan__item:active .item__icon {
     display: flex;
     width: 45px;
     height: 45px;
-    background: url("../image/xmark.svg") no-repeat;
+    background: url("../image/plus_blue.svg");
 }
 
 /***Image***/
@@ -73,10 +87,18 @@ h1 {
     cursor: pointer;
 }
 
+.item__image img {
+    width: 350px;
+}
+
 .item__input:checked ~ .item__image {
     display: block;
 }
 
-.bayan:hover .item__image {
+.bayan__item:hover .item__image {
     display: block;
+}
+
+.bayan__item:active .item__image{
+    opacity: 70%;
 }
