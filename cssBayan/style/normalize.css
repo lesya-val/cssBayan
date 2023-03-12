@@ -4,7 +4,7 @@
 a:focus, a:active{outline: none;}
 nav, footer, header, aside, section {display: block;}
 html, body{min-height: 100%}
-body{line-height: 1; font-size: 24px; font-family: Montserrat; color: #000000;  font-weight: 700; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
+body{line-height: 1; font-size: 1.5rem; font-family: Montserrat; color: #000000;  font-weight: 700; -ms-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -webkit-text-size-adjust: 100%;}
 input, button, textarea{font-family: Montserrat;}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
