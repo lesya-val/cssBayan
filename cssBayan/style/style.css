@@ -54,14 +54,16 @@ h1 {
 }
 
 .item__icon {
-    display: none;
-}
-
-.bayan:hover .item__icon {
-    display: flex;
     width: 45px;
     height: 45px;
     background: url("../image/plus.svg") no-repeat;
+    opacity: 0;
+    transform: rotate(0deg);
+}
+
+.bayan:hover .item__icon {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
 }
 
 .bayan__item:hover .item__icon {
@@ -93,12 +95,24 @@ h1 {
 
 .item__input:checked ~ .item__image {
     display: block;
+    animation: anim 0s;
 }
 
 .bayan__item:hover .item__image {
     display: block;
+    animation: anim 1s forwards;
 }
 
 .bayan__item:active .item__image{
     opacity: 70%;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
