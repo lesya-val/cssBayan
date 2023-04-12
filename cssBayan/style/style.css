@@ -36,10 +36,7 @@ h1 {
 
 .item__text {
     color: #0092e4;
-}
-
-.bayan:hover .item__text {
-    color: #000000;
+	transition: all 0.5s ease;
 }
 
 .item__input:checked ~ .item__title > .item__text {
@@ -60,15 +57,7 @@ h1 {
     background: url("../image/plus.svg") no-repeat;
     opacity: 0;
     transform: rotate(0deg);
-}
-
-.bayan:hover .item__icon {
-    opacity: 1;
-    transition: 0.5s ease-in-out;
-}
-
-.bayan__item:hover .item__icon {
-    transform: rotate(45deg);
+	transition: all 0.5s ease;
 }
 
 .item__input:checked ~ .item__title > .item__icon {
@@ -97,11 +86,6 @@ h1 {
 .item__input:checked ~ .item__image {
     display: block;
     animation: anim 0s;
-}
-
-.bayan__item:hover .item__image {
-    display: block;
-    animation: anim 1s forwards;
 }
 
 .bayan__item:active .item__image{

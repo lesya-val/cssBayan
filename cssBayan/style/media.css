@@ -59,3 +59,24 @@
         padding-bottom: 0.3rem;
     }
 }
+
+@media (hover: hover) {
+	.bayan:hover .item__icon {
+		opacity: 1;
+		transition: all 0.5s ease;
+	}
+
+	.bayan:hover .item__text {
+		transition: all 0.5s ease;
+		color: #000000;
+	}
+
+	.bayan__item:hover .item__icon {
+		transform: rotate(45deg);
+	}
+
+	.bayan__item:hover .item__image {
+		display: block;
+		animation: anim 1s forwards;
+	}
+}
