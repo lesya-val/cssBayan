@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+.container {
+    max-width: 50%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.bayan {
+    cursor: pointer;
+}
+
+.bayan__item {
+    border-top: 0.1rem solid #000000;
+}
+
+.item__input {
+    appearance: none;
+}
+
+/***Title***/
+.item__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1rem;
+    margin-top: -0.8rem;
+    cursor: pointer;
+}
+
+.item__text {
+    color: #0092e4;
+	transition: all 0.5s ease;
+}
+
+.item__input:checked ~ .item__title > .item__text {
+    color: #000000;
+}
+
+.bayan__item:active .item__text{
+    color: #0092e4;
+}
+
+.item__text:active {
+    color: #0092e4;
+}
+
+.item__icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../image/plus.svg") no-repeat;
+    opacity: 0;
+    transform: rotate(0deg);
+	transition: all 0.5s ease;
+}
+
+.item__input:checked ~ .item__title > .item__icon {
+    transform: rotate(45deg);
+}
+
+.bayan__item:active .item__icon {
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../image/plus_blue.svg");
+}
+
+/***Image***/
+.item__image {
+    display: none;
+    padding-bottom: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item__image img {
+    width: 50%;
+}
+
+.item__input:checked ~ .item__image {
+    display: block;
+    animation: anim 0s;
+}
+
+.bayan__item:active .item__image{
+    opacity: 70%;
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
