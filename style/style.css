@@ -16,16 +16,16 @@ h1 {
     cursor: pointer;
 }
 
-.bayan__item {
+.bayan-item {
     border-top: 0.1rem solid #000000;
 }
 
-.item__input {
+.bayan-item__input {
     appearance: none;
 }
 
 /***Title***/
-.item__title {
+.bayan-item__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,24 +34,24 @@ h1 {
     cursor: pointer;
 }
 
-.item__text {
+.bayan-item__text {
     color: #0092e4;
 	transition: all 0.5s ease;
 }
 
-.item__input:checked ~ .item__title > .item__text {
+.bayan-item__input:checked ~ .bayan-item__title > .bayan-item__text {
     color: #000000;
 }
 
-.bayan__item:active .item__text{
+.bayan-item:active .bayan-item__text{
     color: #0092e4;
 }
 
-.item__text:active {
+.bayan-item__text:active {
     color: #0092e4;
 }
 
-.item__icon {
+.bayan-item__icon {
     width: 2.5rem;
     height: 2.5rem;
     background: url("../image/plus.svg") no-repeat;
@@ -60,11 +60,11 @@ h1 {
 	transition: all 0.5s ease;
 }
 
-.item__input:checked ~ .item__title > .item__icon {
+.bayan-item__input:checked ~ .bayan-item__title > .bayan-item__icon {
     transform: rotate(45deg);
 }
 
-.bayan__item:active .item__icon {
+.bayan-item:active .bayan-item__icon {
     display: flex;
     width: 2.5rem;
     height: 2.5rem;
@@ -72,23 +72,23 @@ h1 {
 }
 
 /***Image***/
-.item__image {
+.bayan-item__image {
     display: none;
     padding-bottom: 1rem;
     text-align: center;
     cursor: pointer;
 }
 
-.item__image img {
+.bayan-item__image img {
     width: 50%;
 }
 
-.item__input:checked ~ .item__image {
+.bayan-item__input:checked ~ .bayan-item__image {
     display: block;
     animation: anim 0s;
 }
 
-.bayan__item:active .item__image{
+.bayan-item:active .bayan-item__image{
     opacity: 70%;
 }
 
